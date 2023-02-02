@@ -1,7 +1,18 @@
 import React from "react";
+import Layout from "../Layout/Layout";
+import { useParams } from "react-router-dom";
+import { Movies } from "../Data/Movies";
+import MovieInfo from "../Components/Single/MovieInfo";
 
 function SingleMovie() {
-  return <div>SingleMovie</div>;
+  const { id } = useParams();
+  const movie = Movies.find((movie) => movie.name === id);
+
+  return (
+    <Layout>
+      <MovieInfo movie={movie} />
+    </Layout>
+  );
 }
 
 export default SingleMovie;
