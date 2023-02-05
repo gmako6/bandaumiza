@@ -13,7 +13,7 @@ export const Movies = [
     reviews: 23,
   },
   {
-    name: "The conjuring ",
+    name: "The conjuring",
     desc: "molestiae quas vel sint commode commodi repudiandae consequuntur voluptatum laborunumquam blanditiis harum quisquam optio, eaque rerum! Provident similique accusantium nemo autem.",
     titleImage: "2a.jpg",
     image: "2.jpg",
