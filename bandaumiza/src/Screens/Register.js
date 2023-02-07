@@ -8,18 +8,13 @@ function Register() {
   return (
     <Layout>
       <div className="container mx-auto px-2 my-24 flex-colo">
-        <div className="w-full gap-8 2xl:w-2/5 flex-colo p-14 md:w-3/5 bg-fry rounded-lg border border-border">
+        <div className="w-full p-8 sm:p-14 gap-8 2xl:w-2/5 flex-colo  md:w-3/5 bg-fry rounded-lg border border-border">
           <img
             src="/images/logo.png"
             alt="logo"
             className="w-full h-12 object-contain"
           />
-          <Input
-            label="Full Name"
-            placeholder="mayemu"
-            type="text"
-            bg={true}
-          />
+          <Input label="Full Name" placeholder="mayemu" type="text" bg={true} />
           <Input
             label="Email"
             placeholder="bandaumiza@bandaumiza.com"
