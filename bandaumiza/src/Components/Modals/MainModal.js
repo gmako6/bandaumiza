@@ -1,5 +1,6 @@
 import { Dialog, Transition } from "@headlessui/react";
 import React, { Fragment, useRef } from "react";
+import { IoIosClose } from "react-icons/io";
 
 function MainModal({ modalOpen, setModalOpen, children }) {
   const cancelButtonRef = useRef();
@@ -49,8 +50,10 @@ function MainModal({ modalOpen, setModalOpen, children }) {
               <button
                 onClick={() => setModalOpen(false)}
                 type="button"
-                className=""
-              ></button>
+                className=" transitions font-bold  w-12 h-12 flex-colo text-base  text-white bg-subMain rounded-full hover:bg-white hover:text-subMain"
+              >
+                <IoIosClose className="" />
+              </button>
             </div>
           </div>
         </Dialog>
