@@ -16,7 +16,7 @@ function WatchPage() {
         {/**Below Button Action */}
         <div className="flex-btn flex-wrap mb-6 gap-2 bg-main rounded border border-gray-800 p-6">
           <Link
-            to={`/movie/${movie?.name}`}
+            to={`/movies/${movie?.name}`}
             className="md:text-xl text-sm flex gap-3  items-center font-bold text-dryGray"
           >
             <BiArrowBack /> {movie?.name}

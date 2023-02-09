@@ -23,7 +23,7 @@ function SingleMovie() {
         <div className="my-12">
           <Titles title="Related Movies" Icon={BsCollectionFill} />
           <div className="grid sm:mt-12 mt-6 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10">
-            {RelatedMovies.map((movie, i) => (
+            {RelatedMovies.slice(0, 4).map((movie, i) => (
               <MovieCard key={i} movie={movie} />
             ))}
           </div>
