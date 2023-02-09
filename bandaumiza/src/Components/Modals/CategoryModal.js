@@ -1,7 +1,6 @@
 import React from "react";
 import MainModal from "./MainModal";
 import { Input } from "../UserInputs";
-import { HiPlusCircle } from "react-icons/hi";
 
 function CategoryModal({ modalOpen, setModalOpen, category }) {
   return (
