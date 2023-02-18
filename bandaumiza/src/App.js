@@ -17,31 +17,34 @@ import MovieList from "./Screens/Dashboard/Admin/MovieList";
 import Dashboard from "./Screens/Dashboard/Admin/Dashboard";
 import Categories from "./Screens/Dashboard/Admin/Categories";
 import Users from "./Screens/Dashboard/Admin/Users";
-import AddMovie from './Screens/Dashboard/Admin/AddMovie';
+import AddMovie from "./Screens/Dashboard/Admin/AddMovie";
+import ScrollOnTop from "./ScrollOnTop";
 
 function App() {
   Aos.init();
 
   return (
-    <Routes>
-      <Route path="/" element={<HomeScreen />} />
-      <Route path="/about-us" element={<AboutUs />} />
-      <Route path="/contact-us" element={<ContactUs />} />
-      <Route path="/movies" element={<MoviesPage />} />
-      <Route path="/movies/:id" element={<SingleMovie />} />
-      <Route path="/watch/:id" element={<WatchPage />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} />
-      <Route path="/profile" element={<Profile />} />
-      <Route path="/password" element={<Password />} />
-      <Route path="/favorites" element={<FavoritesMovies />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/movieslist" element={<MovieList />} />
-      <Route path="/categories" element={<Categories />} />
-      <Route path="/users" element={<Users />} />
-      <Route path="/addmovie" element={<AddMovie />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+    <ScrollOnTop>
+      <Routes>
+        <Route path="/" element={<HomeScreen />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/movies" element={<MoviesPage />} />
+        <Route path="/movies/:id" element={<SingleMovie />} />
+        <Route path="/watch/:id" element={<WatchPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/password" element={<Password />} />
+        <Route path="/favorites" element={<FavoritesMovies />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/movieslist" element={<MovieList />} />
+        <Route path="/categories" element={<Categories />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="/addmovie" element={<AddMovie />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </ScrollOnTop>
   );
 }
 
