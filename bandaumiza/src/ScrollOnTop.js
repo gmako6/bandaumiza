@@ -5,7 +5,7 @@ function ScrollOnTop(props) {
   const location = useLocation();
 
   useEffect(() => {
-    window.screenTo(0, 0);
+    window.scrollTo(0, 0);
   }, [location]);
 
   return <>{props.children}</>;
